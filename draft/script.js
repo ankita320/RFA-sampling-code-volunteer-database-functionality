@@ -42,6 +42,7 @@ var dest_sheet = spreadsheet.getEmail(dest_sheet_name)
 var dest_range = sheet.getEmail();
 //not sure if below code is necessary
 dest_range.shiftRowGroupDepth();
+//-----
 var group = AdminDirectory.getEmail(dest_sheet_name);
 
 
