@@ -1,6 +1,5 @@
-groupMembership.delete.user.getEmail
 
-groupMembership = AdminDirectory.Members.remove(member, groupEmail);
+
 
 case "BE":
         moveToSheet("Inactive",rg.getRow(), ev.user.getEmail())
@@ -35,15 +34,21 @@ var dest_sheet = spreadsheet.getSheetByName(dest_sheet_name)
    "nextPageToken": "NNNNN"
 }
 
-var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheets()[0];
-var range = sheet.getRange(2:3);
-range.shiftRowGroupDepth(1);
-var group = sheet.getRowGroup(2, 1);
 
-// Removes this group
-var range = group.remove();
+groupMembership = AdminDirectory.Email.remove;
+SpreadsheetApp.getActiveSpreadsheet().rg.getRow(), ev.user.getEmail
+var dest_sheet = spreadsheet.getEmail(dest_sheet_name)
+var dest_range = sheet.getEmail();
+dest_range.shiftRowGroupDepth();
+var group = AdminDirectory.getEmail(dest_sheet_name);
 
-get.userEmail(dest_sheet_name)
-userEmail.remove()
+
+dest_range = dest_sheet.getRange(emptyRow);
+
+// removes group
+var dest_range = group.remove();
+
+AdminDirectory.toast("Removing user group, please wait..." 2)
+
 //check membership based off of what sheet they were moved to
 //getting email of user from destination sheet
