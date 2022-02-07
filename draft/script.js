@@ -35,15 +35,17 @@ var dest_sheet = spreadsheet.getSheetByName(dest_sheet_name)
 }
 
 
-groupMembership = AdminDirectory.Email.remove;
+groupMembership = AdminDirectory.user.remove;
+
 SpreadsheetApp.getActiveSpreadsheet().rg.getRow(), ev.user.getEmail
 var dest_sheet = spreadsheet.getEmail(dest_sheet_name)
 var dest_range = sheet.getEmail();
+//not sure if below code is necessary
 dest_range.shiftRowGroupDepth();
 var group = AdminDirectory.getEmail(dest_sheet_name);
 
 
-dest_range = dest_sheet.getRange(emptyRow);
+var dest_range = dest_sheet.getRange(emptyRow);
 
 // removes group
 var dest_range = group.remove();
