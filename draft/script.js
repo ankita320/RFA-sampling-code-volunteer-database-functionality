@@ -34,7 +34,7 @@ var dest_sheet = spreadsheet.getSheetByName(dest_sheet_name)
    "nextPageToken": "NNNNN"
 }
 
-//get inactive user
+//get inactive user --> FUNCTION THING
 
 
 
