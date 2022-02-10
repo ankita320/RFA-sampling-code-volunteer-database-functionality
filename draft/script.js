@@ -35,7 +35,7 @@ var dest_sheet = spreadsheet.getSheetByName(dest_sheet_name)
 }
 
 //get inactive user --> FUNCTION THING
-
+// bySheetName
 
 
 groupMembership = AdminDirectory.user.remove;
