@@ -1,18 +1,4 @@
 
-
-
-case "BE":
-        moveToSheet("Inactive",rg.getRow(), ev.user.getEmail())
-        break;
-      case "BF":
-        moveToSheet("Teacher Inactive",rg.getRow(), ev.user.getEmail())
-        break;
-      case "BG":
-        moveToSheet("Curriculum Inactive",rg.getRow(), ev.user.getEmail())
-        break;
-      default:
-var dest_sheet = spreadsheet.getSheetByName(dest_sheet_name)
-
 {
    "kind": "directory#members",
    "members": [
@@ -38,7 +24,7 @@ var dest_sheet = spreadsheet.getSheetByName(dest_sheet_name)
 // bySheetName
 
 
-groupMembership = AdminDirectory.user.remove;
+groupMembership = AdminDirectory.user.remove; //(?)
 
 SpreadsheetApp.getActiveSpreadsheet().rg.getRow(), ev.user.getEmail
 SpreadsheetApp.getActiveSheet().getName() 
