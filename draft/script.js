@@ -1,4 +1,4 @@
-
+// admindirectory json
 {
    "kind": "directory#members",
    "members": [
@@ -20,7 +20,7 @@
    "nextPageToken": "NNNNN"
 }
 
-//get inactive user --> FUNCTION THING
+//getInactiveUser  --> FUNCTION(?)
 // bySheetName
 
 
