@@ -58,7 +58,7 @@ var dest_range = dest_sheet.getRange(emptyRow);
 // removes group
 var dest_range = groups.remove();
 
-AdminDirectory.toast(`Removing user from ${dest_range} group, please wait...` 2)
+AdminDirectory.toast(`Removing user from ${groups} group, please wait...` 2)
 
 //check membership based off of what sheet they were moved to
 //getting email of user from destination sheet
