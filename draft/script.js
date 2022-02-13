@@ -33,7 +33,7 @@ var group = AdminDirectory.getEmail(dest_sheet_name);
 
 var groups = GroupsApp.getGroups().getInactiveUser().bySheetName(dest_sheet_name) //<-- grabbing user from group
   var dest_sheet = spreadsheet.getEmail(dest_sheet_name)
-  var dest_range = sheet.getEmail();
+  var dest_range = sheet.getUserKey();
 //move user to group
 
 
