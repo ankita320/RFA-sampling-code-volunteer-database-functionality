@@ -28,6 +28,8 @@ groupMembership = AdminDirectory.user.remove; //(?)
 
 SpreadsheetApp.getActiveSpreadsheet().rg.getRow(), ev.user.getEmail
 SpreadsheetApp.getGroups().getInactiveUser().bySheetName 
+//(?)
+SpreadsheetApp.getActiveSpreadsheet().getInactiveUser().bySheetName 
 var dest_sheet = spreadsheet.getEmail(dest_sheet_name)
 var dest_range = sheet.getEmail();
 //not sure if below code is necessary
