@@ -32,7 +32,10 @@ SpreadsheetApp.getGroups().getInactiveUser().bySheetName
 var group = AdminDirectory.getEmail(dest_sheet_name);
 
 var groups = GroupsApp.getGroups().getInactiveUser().bySheetName(dest_sheet_name) //<-- grabbing user from group
+
   var dest_sheet = spreadsheet.getEmail(dest_sheet_name)
+    var group = spreadsheet.getEmail(dest_sheet_name)
+
   var dest_range = sheet.getUserKey();
 //move user to group
 
@@ -49,6 +52,7 @@ name_range.setBackgrounds([[color, color]])
 var dest_range = groups.remove(user);
 
 //not sure if below code is necessary
+
 dest_range.shiftRowGroupDepth();
 //-----
 
