@@ -31,7 +31,8 @@ SpreadsheetApp.getGroups().getInactiveUser().bySheetName
 //(?)
 var group = AdminDirectory.getEmail(dest_sheet_name);
 
-var groups = GroupsApp.getGroups().getInactiveUser().bySheetName(dest_sheet_name) //<-- grabbing user from group
+var groups = GroupsApp.getGroups().getInactiveUser(sheet)
+var groupMember = GroupsApp(dest_sheet_range)
 
   var dest_sheet = spreadsheet.getEmail(dest_sheet_name)
     var group = spreadsheet.getEmail(dest_sheet_name)
