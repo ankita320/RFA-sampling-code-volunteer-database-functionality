@@ -31,29 +31,45 @@ SpreadsheetApp.getActiveSpreadsheet().rg.getRow(), ev.user.getEmail
 SpreadsheetApp.getGroups().getInactiveUser().bySheetName 
 //(?)
 //var group = AdminDirectory.getEmail(dest_sheet_name);
+
 var groups = GroupsApp.getGroups();
-var groups = GroupsApp.getRole(user).bySheetName(dest_sheet_name); 
+var groupMember = group.getEmail().bySheet(dest_sheet); 
+var groupMembership = group.getRole(groupMember); 
+//or
+var group = GroupsApp.getGroupBySheet(dest_sheet);
+//gets group of user from  sheet
+console.log("Group Membership:" + " " + groupMembership);
 
 
-var groupMember = GroupsApp(dest_sheet_range);
+var groups = groups.remove(member);
+
+/*var groupMember = GroupsApp(dest_sheet_range);
 
   var dest_sheet = spreadsheet.getEmail(dest_sheet_name);
     var group = spreadsheet.getEmail(dest_sheet_name);
 
-  var dest_range = sheet.getUserKey();
+  var dest_range = sheet.getUserKey();*/
 //move user to group
 
+/*
+var row = sheet.getRange(rowNum, 1, 1, sheet.getMaxColumns()).getValues()
+  var note = sheet.getRange(rowNum, 1, 1, 1).getNote()
+  var color = sheet.getRange(rowNum, 1, 1, 1).getBackground()
+  var rowP1 = row[0].slice(0, colFromA1Notation("AV3"))
+  var rowP2 = row[0].slice(colFromA1Notation("BA3"), colFromA1Notation("BC3"))
+  var rowCut = rowP1.concat(rowP2)
+  console.log("Row: " + rowCut)
+  console.log("Row Length: " + rowCut.length)
 
-date = Utilities.formatDate(new Date(), "GMT-8", "HH:mm:ss MM/dd/yyyy")
-dest_range = dest_sheet.getRange(emptyRole, 1, 1, 1)
-name_range = dest_sheet.getRange(emptyRow, 1, 1, 2)
-console.log("Note: " + note)
-if(note != "") note = note.concat("\n\n")
-dest_range.setNote(note + "Moved by " + usr + " at " + date + "in PT\n")
-name_range.setBackgrounds([[color, color]])
-//^^ code for moving to group in spreadsheet(apps script)
+  var fcol = dest_sheet.getRange(1, 1, dest_sheet.getMaxRows()).getValues()
 
-var dest_range = groups.remove(user);
+  for(var i = 0; i < dest_sheet.getMaxRows(); i++) {
+    if (fcol[i] == "") {
+      var emptyRow = i+1
+      break;
+    }
+  }
+*/
 
 //not sure if below code is necessary
 
