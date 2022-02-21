@@ -30,23 +30,22 @@ groupMembership = AdminDirectory.user.remove; //(?)
 SpreadsheetApp.getActiveSpreadsheet().rg.getRow(), ev.user.getEmail
 SpreadsheetApp.getGroups().getInactiveUser().bySheetName 
 //(?)
-var group = AdminDirectory.getEmail(dest_sheet_name);
+//var group = AdminDirectory.getEmail(dest_sheet_name);
+var groups = GroupsApp.getGroups();
+var groups = GroupsApp.getRole(user).bySheetName(dest_sheet_name); 
 
-var groups = GroupsApp.getGroups().getInactiveUser().bySheetName(dest_sheet_name) 
 
-var groups = GroupsApp.getGroups().getRole(user)
+var groupMember = GroupsApp(dest_sheet_range);
 
-var groupMember = GroupsApp(dest_sheet_range)
-
-  var dest_sheet = spreadsheet.getEmail(dest_sheet_name)
-    var group = spreadsheet.getEmail(dest_sheet_name)
+  var dest_sheet = spreadsheet.getEmail(dest_sheet_name);
+    var group = spreadsheet.getEmail(dest_sheet_name);
 
   var dest_range = sheet.getUserKey();
 //move user to group
 
 
 date = Utilities.formatDate(new Date(), "GMT-8", "HH:mm:ss MM/dd/yyyy")
-dest_range = dest_sheet.getRange(emptyRow, 1, 1, 1)
+dest_range = dest_sheet.getRange(emptyRole, 1, 1, 1)
 name_range = dest_sheet.getRange(emptyRow, 1, 1, 2)
 console.log("Note: " + note)
 if(note != "") note = note.concat("\n\n")
