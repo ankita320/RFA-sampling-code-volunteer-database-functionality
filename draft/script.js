@@ -39,7 +39,7 @@ var groupMembership = group.getRole(groupMember);
 var group = GroupsApp.getGroupBySheet(dest_sheet);
 //gets group of user from  sheet
 console.log("Group Membership:" + " " + groupMembership);
-
+//move by name
 
 var groups = groups.remove(member);
 
