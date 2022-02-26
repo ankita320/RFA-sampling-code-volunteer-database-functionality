@@ -33,22 +33,31 @@ SpreadsheetApp.getGroups().getInactiveUser().bySheetName
 //var group = AdminDirectory.getEmail(dest_sheet_name);
 
 var groups = GroupsApp.getGroups();
-var groupMember = group.getEmail().bySheet(dest_sheet); 
-var groupMembership = group.getRole(groupMember); 
-//or
-var group = GroupsApp.getGroupBySheet(dest_sheet);
+var groupMember = groups.getEmail(); 
+var groupMembership = groupMember.getRole(); 
 //gets group of user from  sheet
 console.log("Group Membership:" + " " + groupMembership);
-//move by name
 
-var groups = groups.remove(member);
+if (groups.hasMember(groupMember(groupsMembership(dest_sheet)))):
+   console.log("Correct group.");
+else:
+   groups.insert(groupMember.groupsMembership(dest_sheet));
+update(groups);
+
+
+//move by name
 //if hasmember, update group,member(email);
 //elif insert
 //update group
-/*var groupMember = GroupsApp(dest_sheet_range);
 
-  var dest_sheet = spreadsheet.getEmail(dest_sheet_name);
-    var group = spreadsheet.getEmail(dest_sheet_name);
+
+
+//var groupMember = GroupsApp(dest_sheet_range);
+
+//var groups = groups.remove(member);
+
+  //var dest_sheet = spreadsheet.getEmail(dest_sheet_name);
+    //var group = spreadsheet.getEmail(dest_sheet_name);
 
   var dest_range = sheet.getUserKey();*/
 //move user to group
