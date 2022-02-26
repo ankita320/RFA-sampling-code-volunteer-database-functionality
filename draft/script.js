@@ -44,6 +44,7 @@ else:
    groups.insert(groupMember.groupsMembership(dest_sheet));
 update(groups);
 
+//if marked entirely inactive,not part of anymore, remove
 
 //move by name
 //if hasmember, update group,member(email);
