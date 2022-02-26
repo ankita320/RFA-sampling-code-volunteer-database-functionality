@@ -42,7 +42,9 @@ console.log("Group Membership:" + " " + groupMembership);
 //move by name
 
 var groups = groups.remove(member);
-//if hasmember, update group,member(email)
+//if hasmember, update group,member(email);
+//elif insert
+//update group
 /*var groupMember = GroupsApp(dest_sheet_range);
 
   var dest_sheet = spreadsheet.getEmail(dest_sheet_name);
