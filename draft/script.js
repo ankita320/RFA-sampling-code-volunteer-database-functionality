@@ -38,13 +38,14 @@ var groupMembership = groupMember.getRole();
 //gets group of user from  sheet
 console.log("Group Membership:" + " " + groupMembership);
 /*if the group member is in the correct group based on role, check, if not, add the group member to the group according to the role. and delete the group meber if they are marked inactive on the  spreadshee*/
-//pass on roles to from dest-sheet to groups
+//pass on 'roles' from dest-sheet to groups
 
 if (groups.hasMember(groupMember(dest_sheet))) {
    console.log("Correct group.");}
-//elif (if it doesn't have it) {
-   groups.insert(groupMember.groupsMembership(dest_sheet));}
-  //elif (if in overall inactive, delete)
+else: {
+   groups.insert(groupMember.groupsMembership(dest_sheet));};
+
+
 update(groups);
 
 //if marked entirely inactive,not part of anymore, remove
