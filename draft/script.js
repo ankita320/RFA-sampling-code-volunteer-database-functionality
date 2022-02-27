@@ -41,10 +41,10 @@ console.log("Group Membership:" + " " + groupMembership);
 //pass on 'roles' from dest-sheet to groups
 
 if (groups.hasMember(groupMember(dest_sheet))) {
-   console.log("Correct group.")};
+   console.log("Correct group.");}
 
 else if (groups.hasMember(groupMember.bySheetName(Inactive))) {
-    groups.delete(groupMember.bySheetName(Inactive)};
+    groups.delete(groupMember.bySheetName(Inactive);}
 else {
    groups.insert(groupMember.groupsMembership(dest_sheet));};
 
