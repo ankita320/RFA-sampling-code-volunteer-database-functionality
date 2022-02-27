@@ -46,7 +46,7 @@ if (groups.hasMember(groupMember(dest_sheet))) {
 else if (groups.hasMember(groupMember.bySheetName(Inactive))) {
     groups.delete(groupMember.bySheetName(Inactive);}
 else {
-   groups.insert(groupMember.groupsMembership(dest_sheet));};
+   groups.insert(groupMember.groupsMembership(dest_sheet));}
 
 
 update(groups);
