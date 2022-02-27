@@ -33,7 +33,7 @@ SpreadsheetApp.getGroups().getInactiveUser().bySheetName
 //var group = AdminDirectory.getEmail(dest_sheet_name);
 
 var groups = GroupsApp.getGroups();
-var groupMember = groups.getEmail(); 
+var groupMember = groups.getEmail(dest_sheet); 
 var groupMembership = groupMember.getRole(); 
 //gets group of user from  sheet
 console.log("Group Membership:" + " " + groupMembership);
@@ -41,8 +41,11 @@ console.log("Group Membership:" + " " + groupMembership);
 //pass on 'roles' from dest-sheet to groups
 
 if (groups.hasMember(groupMember(dest_sheet))) {
-   console.log("Correct group.");}
-else: {
+   console.log("Correct group.")};
+
+else if (groups.hasMember(groupMember.bySheetName(Inactive))) {
+    groups.delete(groupMember.bySheetName(Inactive)};
+else if ()/*or else(?)*/{
    groups.insert(groupMember.groupsMembership(dest_sheet));};
 
 
