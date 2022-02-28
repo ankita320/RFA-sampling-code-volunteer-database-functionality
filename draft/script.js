@@ -32,7 +32,7 @@ SpreadsheetApp.getGroups().getInactiveUser().bySheetName
 //(?)
 //var group = AdminDirectory.getEmail(dest_sheet_name);
 
-var groups = GroupsApp.getGroups();
+var groups = GroupsApp.getGroupByEmail();
 var groupMember = groups.getEmail(dest_sheet); 
 var groupMembership = groupMember.getRole(); 
 //gets group of user from  sheet
