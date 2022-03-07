@@ -40,13 +40,17 @@ console.log("Group Membership:" + " " + groupMembership);
 /*if the group member is in the correct group based on role, check, if not, add the group member to the group according to the role. and delete the group meber if they are marked inactive on the  spreadshee*/
 //pass on 'roles' from dest-sheet to groups
 
-if (groups.hasMember(groupMember(dest_sheet))) {
+if (groups.hasMember(groupMember)) {
    console.log("Correct group.");}
 
 else if (groups.hasMember(groupMember.bySheetName(Inactive))) {
-    groups.delete(groupMember.bySheetName(Inactive);}
+    groups.delete(groupMember.bySheetName(Inactive, Active);}
+
+else if (groups.hasMember(groupMember.bySheetName( Teacher Inactive, Curriculum Inactive))) {
+    groups.delete(groupMember.bySheetName(Active);}
 else {
-   groups.insert(groupMember.groupsMembership(dest_sheet));}
+   groups.insert(groupMember.groupsMembership);
+   }
 
 
 update(groups);
