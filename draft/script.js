@@ -55,6 +55,9 @@ else {
 
 update(groups);
 
+//userDataRaw[6]
+//not remove from whole thing, just for removing b4 adding to new group(?)
+
 //if marked entirely inactive,not part of anymore, remove
 
 //move by name
