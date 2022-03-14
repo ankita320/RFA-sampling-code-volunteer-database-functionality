@@ -76,7 +76,10 @@ function addUsertoGroup(userEmail) {
   }
 }
 
+AdminDirectory.Members.remove("teacher@roboticsforall.net", userDataRaw[6]);
+
 //userDataRaw[6]
+//if they are moved to inactive(teacher), remove fro teacher group
 //not remove from whole thing, just for removing b4 adding to new group(?)
 
 //if marked entirely inactive,not part of anymore, remove
