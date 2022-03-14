@@ -55,6 +55,27 @@ else {
 
 update(groups);
 
+function addUsertoGroup(userEmail) {
+  var userEmail = userEmail.toLowerCase();
+  var groupId = "My-Group@example.com";
+  var group = GroupsApp.getGroupByEmail(groupId);
+  try { 
+    var hasMember = group.hasUser(userEmail); 
+    if (!hasMember){
+          var newMember = {email: userEmail, role: "MEMBER"};
+          var mStatus=AdminDirectory.Members.insert(newMember, groupId); 
+          Logger.log(" inserted: "+mStatus.email+"\n");
+          return true; 
+    }else{
+          Logger.log(userEmail+" exists\n"); 
+          return false;
+    }
+  } catch(e) {
+          Logger.log(userEmail + " error"+e+"\n");
+          return false; 
+  }
+}
+
 //userDataRaw[6]
 //not remove from whole thing, just for removing b4 adding to new group(?)
 
