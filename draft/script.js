@@ -43,15 +43,15 @@ console.log("Group Membership:" + " " + groupMembership);
 if (groups.hasMember(groupMember)) {
    console.log("Correct group.");}
 
-else if (groups.hasMember(groupMember.bySheetName(Inactive))) {
-    groups.delete(groupMember.bySheetName(Inactive, Active);}
+else if (dest_sheet.getName.(Curriculum Inactive)) {
+      AdminDirectory.Members.remove("curricdev@roboticsforall.net", userDataRaw[6]);
 
-else if (groups.hasMember(groupMember.bySheetName( Teacher Inactive, Curriculum Inactive))) {
-    groups.delete(groupMember.bySheetName(Active);}
-else {
-   groups.insert(groupMember.groupsMembership);
+else if (spreadsheet.getSpreadsheetByName(Teacher Inactive)) {
+      AdminDirectory.Members.remove("teacher@roboticsforall.net", userDataRaw[6]);
+
    }
 
+   //if you get a member and it's in the spreadsheet for that page inactive, remove them from the gorup
 
 update(groups);
 
