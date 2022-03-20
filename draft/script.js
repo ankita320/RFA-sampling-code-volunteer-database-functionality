@@ -12,7 +12,7 @@ if (AdminDirectory.Members.hasMember("curricdev@roboticsforall.net", "teacher@ro
    console.log("Correct group.");}
 
 else if (sheet.getSheetByName('Teacher Inactive').getRange() == userDataRaw[6]) {
-      AdminDirectory.Members.remove("teacher@roboticsforall.net", userDataRaw[6]);
+      AdminDirectory.Members.remove("teacher@roboticsforall.net", userDataRaw[6]);}
 
 else if (sheet.getSheetByName('Curriculum Inactive').getRange() == userDataRaw[6]) {
       AdminDirectory.Members.remove("curricdev@roboticsforall.net", userDataRaw[6]);
