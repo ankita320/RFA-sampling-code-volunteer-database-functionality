@@ -40,13 +40,15 @@ console.log("Group Membership:" + " " + groupMembership);
 /*if the group member is in the correct group based on role, check, if not, add the group member to the group according to the role. and delete the group meber if they are marked inactive on the  spreadshee*/
 //pass on 'roles' from dest-sheet to groups
 
-if (groups.hasMember(groupMember)) {
+ var sheet = SpreadsheetApp.getActiveSheet()
+
+if (AdminDirectory.Members.hasMember("curricdev@roboticsforall.net", "teacher@roboticsforall.net"userDataRaw[6]) && (sheet.getSheetByName('Active').getName() == userDataRaw[6])) {
    console.log("Correct group.");}
 
-else if (dest_sheet.getName.(Curriculum Inactive)) {
+else if (sheet.getSheetByName('Teacher Inactive').getName() == userDataRaw[6]) {
       AdminDirectory.Members.remove("curricdev@roboticsforall.net", userDataRaw[6]);
 
-else if (spreadsheet.getSpreadsheetByName(Teacher Inactive)) {
+else if (sheet.getSheetByName('Curriculum Inactive').getName() == userDataRaw[6]) {
       AdminDirectory.Members.remove("teacher@roboticsforall.net", userDataRaw[6]);
 
    }
