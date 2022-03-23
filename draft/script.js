@@ -46,4 +46,13 @@ function addUsertoGroup(userEmail) {
   }
 }
 
+  // If statement on dest_sheet_name to define groupEmail
+  // dest_sheet_name = Teacher Inactive, groupEmail = teachers@roboticsforall.net
+  // dest_sheet_name = Curriculum Inactive, groupEmail = curricdev@roboticsforall.net
+  // dest_sheet_name = Inactive, code shouldn't do anything
+
+  // if (AdminDirectory.Members.hasMember(groupEmail, userEmail)) {
+  //
+  // }
+  //AdminDirectory.Members.remove(groupEmail, userEmail);
 
