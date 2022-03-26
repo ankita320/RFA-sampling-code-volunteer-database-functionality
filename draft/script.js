@@ -56,3 +56,44 @@ function addUsertoGroup(userEmail) {
   // }
   //AdminDirectory.Members.remove(groupEmail, userEmail);
 
+userEmail = userDataRaw[6];
+
+if (dest_sheet_name === "Teacher Inactive") {
+   groupEmail = "teachers@roboticsforall.net";}
+
+else if (dest_sheet_name === "Curriculum Inactive") {
+   groupEmail = "curricdev@roboticsforall.net";}
+
+else () {
+   //do nothing
+}
+
+if (AdminDirectory.Members.hasMember(groupEmail,userEmail))
+   AdminDirectory.Members.remove(groupEmail, userEmail);)
+
+
+
+if (AdminDirectory.Members.hasMember("curricdev@roboticsforall.net", "teacher@roboticsforall.net", userDataRaw[6]) && (sheet.getSheetByName('Active').getName() == userDataRaw[6])) {
+   console.log("Correct group.");}
+
+
+else if (sheet.getSheetByName('Teacher Inactive').getRange() == userDataRaw[6]) {
+      AdminDirectory.Members.remove("teacher@roboticsforall.net", userDataRaw[6]);}
+
+else if (sheet.getSheetByName('Curriculum Inactive').getRange() == userDataRaw[6]) {
+      AdminDirectory.Members.remove("curricdev@roboticsforall.net", userDataRaw[6]);
+
+   }
+   AdminDirectory.toast(`Removing user from ${groups} group, please wait...` 2)
+  // If statement on dest_sheet_name to define groupEmail
+  // dest_sheet_name = Teacher Inactive, groupEmail = teachers@roboticsforall.net
+  // dest_sheet_name = Curriculum Inactive, groupEmail = curricdev@roboticsforall.net
+  // dest_sheet_name = Inactive, code shouldn't do anything
+
+  // if (AdminDirectory.Members.hasMember(groupEmail, userEmail)) {
+  //
+  // }
+  //AdminDirectory.Members.remove(groupEmail, userEmail);
+
+
+
