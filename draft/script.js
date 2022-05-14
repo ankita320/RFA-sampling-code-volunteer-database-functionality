@@ -15,6 +15,8 @@ else () {
 
 
 
+
+
 if (AdminDirectory.Members.hasMember(groupEmail,userEmail).isMember)
    AdminDirectory.Members.remove(groupEmail, userEmail);)
 
