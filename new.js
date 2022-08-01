@@ -1,5 +1,8 @@
 let overseerChannel = 'https://hooks.slack.com/services/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';
 
+
+
+//sending messages to single spreadsheet(hidden spreadsheet) and then at 12am every midnight, sends all the messages to the slack channel.
 function sendLog() {
   let dest_sheet_name = "Active"
 
